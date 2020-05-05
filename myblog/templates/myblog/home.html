@@ -1,0 +1,40 @@
+{% extends 'myblog/base.html' %}
+{% load static %}
+{% block content %}
+   <div class="jumbotron text-center bg-default" id="cont1">
+     <h1 class="text-white">PARTNER YOU CAN TRUST</h1>
+     <strong> <h3 class="text-success" >EVERYBODY DESERVES BEST</h3></strong>
+    </div>
+    <div class="card-deck">
+
+ <div class="card">
+    <img class="card-img-top" src="{% static "myblog/images/laptop2.jpg" %}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Android App development</h5>
+      <p class="card-text">Experience best android app design from the best experts around the globe,You only need to place an order and we will serve you with the best</p>
+    <p class="card-text"><p class="btn bg-steel"><a href="{% url 'contact' %}">Request service</a></p></p>
+    </div>
+  </div>
+ <div class="card">
+    <img class="card-img-top" src="{% static "myblog/images/laptop.jpg" %}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Software related issues consultation</h5>
+      <p class="card-text">We offer solutions and advice on software related issues,software installations and other software related services</p>
+    <p class="card-text"><p class="btn bg-steel"><a href="{% url 'contact' %}">Request service</a></p></p>
+    </div>
+  </div>
+ <div class="card">
+    <img class="card-img-top" src="{% static "myblog/images/laptop2.jpg" %}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Web application development and design</h5>
+      <p class="card-text">Expert in web design with experience in popular web languages like php and python,we design according to your taste with frameworks like django,laravel,codeigniter etc</p>
+    <p class="card-text"><p class="btn bg-steel"><a href="{% url 'contact' %}">Request service</a></p></p>
+    </div>
+  </div>
+</div>
+    <div>
+    <a href="#" class="fab fa-facebook-icon"></a>
+    </div>
+
+
+{% endblock content %}

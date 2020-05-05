@@ -1,0 +1,24 @@
+{% extends 'myblog/base.html' %}
+{% block content %}
+ <div class="jumbotron text-center">
+  <h1 class="text-white">TINCH_SOLUTIONS </h1>
+  <p>This is an IT company dedicated to giving you the best services at you request.We offer web,android app development and solutions to software related issues.</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>More About</h3>
+        <p class="btn bg-steel"><a href="{% url 'services' %}" class="text-center"> WEB DEVELOPMENT SERVICES.</a></p>
+    </div>
+    <div class="col-sm-4">
+      <h3>More About</h3>
+        <p class="btn bg-steel "><a href="{% url 'services' %}" class="text-center">SOFTWARE RELATED ISSUES SERVICES</a> </p>
+    </div>
+    <div class="col-sm-4">
+      <h3>More About</h3>
+        <p class="btn bg-steel"><a href="{% url 'services' %}" class="text-center"> APPLICATIONS DEVELOPMENT SERVICES</a></p>
+    </div>
+  </div>
+</div>
+{% endblock content %}

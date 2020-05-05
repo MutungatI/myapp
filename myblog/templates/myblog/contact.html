@@ -1,0 +1,31 @@
+{% extends 'myblog/base.html' %}
+   {% load crispy_forms_tags %}
+{% block content %}
+
+       <div class="alert alert-success">
+           <p class="text-center"><b>SEND EMAIL:titusmiriti098@gmail.com</b></p>
+           <p class="text-center"><b>Call:0746919433 or 0799042854</b></p>
+    </div>
+    <div class="content-section">
+
+    <form action="{% url 'sent' %}" method="POST">
+    {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Send us an E-mail</legend>
+               <div class="form-group row">
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">email*</label>
+    <div class="col-sm-10">
+      <input type="email" required=True class="form-control form-control-sm" id="colFormLabelSm" placeholder="enter our email address">
+    </div>
+  </div>
+              <div class="form-group">
+    <label for="formGroupExampleInput2">Email body*</label>
+                  <textarea  class="form-control" required=True id="formGroupExampleInput2" placeholder="email content"></textarea>
+  </div>
+        </fieldset>
+    <div class="form-group">
+        <button class="btn btn-outline-info" type="submit">Request Service</button>
+    </div>
+    </form>
+    </div>
+{% endblock content %}
